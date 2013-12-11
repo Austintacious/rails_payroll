@@ -1,1 +1,14 @@
-<p>List your sales here</p>
+<p><strong>Sales Data</strong></p>
+<% @sales_array.each do |x| %>
+  <% if x[0] == "Ricky Bobby" %>
+    <mark><%= x %></mark><br>
+  <% else %>
+    <%= x %> <br>
+
+  <%end%>
+<%end%>
+
+<%= @commissioned %><br>
+<%= @commissioned2 %><br>
+
+
